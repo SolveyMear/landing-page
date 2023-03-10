@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+/* ---------------------------HEADER------------------------- */
+header{
+    background-color: #DD5555;
+
+}
+
+.logo{
+    margin-left: 2%;
+}
+.logo-burger{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    list-style-type: none;
+    padding: 13px;
+}
+
+.burger:hover{
+    cursor: pointer;
+}
+
+.burger-icon{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 4px solid white;
+    width: 30px;
+    margin: 0 20px 6px 0;
+}
+
+.menu-tabs{
+    height: 40px;
+    text-align: center;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 2.5;
+}
+
+.menu-tabs:hover{
+    cursor: pointer;
+    background:rgba(0, 0, 0, 0.25);
+}
+
+.menu{
+    display: none;
+}
+
+/* -----------------section SUPER APP--------------------- */
+
+.image-principale{
+    display: flex;
+    flex-direction: column;
+    background: url('images-lp/image-ppale.png') no-repeat center;
+    background-size: cover;
+    color: #FFFFFF;
+    height: 658px;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-principale .about-app-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    white-space: nowrap;
+}
+
+.image-principale h1{
+    font-family: 'OpenSans-Bold', sans-serif;
+    font-size: 48px;
+    margin: 0.5em;
+    text-transform: uppercase;
+}
+
+.image-principale h4{
+    font-weight: normal;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 24px;
+    margin: 0.5em;
+}
+    
+.image-principale-ligne{
+    border-bottom: 1px solid #FFFFFF; 
+    width: 390px;
+    height: 20px;
+    margin-bottom: 18px;
+}
+
+.buttons{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.buttons  > .button-items{
+    background-color: #FFFFFF;
+    border: 1px solid white;
+    display: flex;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 18px;
+    width: 115px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    color: #2E2E2E;
+    margin: 12px;
+    border-radius: 5px;
+}
+
+.button-items > img{
+    height: 17px;
+    width: 16px;
+    position: relative;
+    right: 10px;
+}
+
+/* ---------------section "trucs super"------------------ */
+
+
+
+
+/* ------------------MEDIA QUERIES----------------- */
+
+@media screen and (min-width: 700px) {
+
+    .burger{
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+    }
+    .logo{
+        width: 120px;
+        height: 28px;
+        margin-left: 11%;
+        margin-right: 12px;
+    }
+    
+    header ul{
+        height: 100%;
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+    }
+    
+    ul li{
+        display: flex;
+        align-items: center;
+        width: 89px;
+        justify-content: center ;
+        height: 100%;
+        white-space: nowrap;
+    }
+    
+    .menu-tabs:hover{
+        color: #FFFFFF;
+        background:rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+    }
+    
+}
+
