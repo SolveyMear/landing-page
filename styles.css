@@ -5,47 +5,56 @@
     font-weight: normal;
 }
 
-/* ---------------------------HEADER------------------------- */
+/*--------------------------HEADER------------------------- */
 nav{
     height: 52px;
     background-color: #DD5555;
-}
 
+}
 .logo{
     width: 120px;
     height: 28px;
+}
+
+.logo-burger{
     margin-left: 11%;
     margin-right: 12px;
+    border: 1px solid black;
 }
 
 header ul{
-    font-family: 'OpenSans', sans-serif;
-    font-size: 14px;
-    color: #FFFFFF;
     height: 100%;
+    width: 100%;
     display: flex;
     list-style-type: none;
     align-items: center;
+    
 }
+.menu{
+    display: flex;
+    height: 100%;
+    align-items: center;
+} 
 
-header li{
+.menu li{
+    font-family: 'OpenSans', sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
     display: flex;
     align-items: center;
     width: 89px;
     justify-content: center ;
     height: 100%;
     white-space: nowrap;
+
 }
 
-.first-tab:hover,
-.second-tab:hover,
-.third-tab:hover,
-.fourth-tab:hover{
+.menu-tabs:hover{
     color: #FFFFFF;
     background:rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-
+    cursor: pointer;   
 }
+
 
 /* -----------------section SUPER APP--------------------- */
 
@@ -357,15 +366,44 @@ button:hover{
 }
 
 /* ------------------MEDIA QUERIES----------------- */
+/*Rajouter les span en rose en MQ*/
 
+@media screen and (max-width: 700px) {
 
-@media screen and (max-width: 600px) {
-    .logo{
-        margin-left: 5%;
+   .burger-icon{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 4px solid white;
+    width: 30px;
+    margin: 0 20px 6px 0;
     }
-    ul{
+    .menu{
+        display: none;
+    }
+    .menu-tabs:hover{
+        cursor: pointer;
+        background:rgba(0, 0, 0, 0.25);
+    }
+    .menu-tabs{
+        height: 40px;
+        text-align: center;
+        font-family: 'OpenSans', sans-serif;
+        font-size: 14px;
+        color: #FFFFFF;
+        line-height: 2.5;
+    }
+
+    .logo-burger{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        height: 50px;
+        list-style-type: none;
+        padding: 13px;
+        width: 100%;
+        margin: 0%;
+    }
+    .logo{
+        margin-left: 2%;
     }
 }
     
@@ -394,26 +432,26 @@ button:hover{
         margin: 20px;
     }
 
-        /* FORMULAIRE */
-        .form-name-mail{
-            flex-direction: column;
-            align-items: center;
-        }
-        .form-name,
-        .form-mail{
-            width: 100%;
+    /* FORMULAIRE */
+    .form-name-mail{
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-name,
+    .form-mail{
+        width: 100%;
 
-        }
-        .form-name input{
-            margin-bottom: 10px;
-        }
-        .form-container{
-            width: 100%;
-        }
-        text-area{
-            width: 50%;
-            align-items: center;
-        }
+    }
+    .form-name input{
+        margin-bottom: 10px;
+    }
+    .form-container{
+        width: 100%;
+    }
+    text-area{
+        width: 50%;
+        align-items: center;
+    }
 }
       
     
