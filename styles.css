@@ -35,7 +35,7 @@ header ul{
     align-items: center;
 } 
 
-.menu li{
+.menu-tabs{
     font-family: 'OpenSans', sans-serif;
     font-size: 14px;
     color: #FFFFFF;
@@ -372,6 +372,25 @@ button:hover{
 @media screen and (max-width: 700px) {
 
 /* MENU */
+    header{
+        background-color: #DD5555;
+    }
+    nav{
+        padding: 5px;
+    }
+    ul{
+        flex-direction: column;
+    }
+    .logo-burger{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        list-style-type: none;
+        padding: 13px;
+        width: 100%;
+        margin: 0;
+    }
    .burger-icon{
         display: flex;
         flex-direction: column;
@@ -379,57 +398,27 @@ button:hover{
         width: 30px;
         margin: 0 20px 6px 0;
     }
+    .logo{
+        margin-left: 2%;
+    }
     .menu-tabs:hover{
         cursor: pointer;
         background:rgba(0, 0, 0, 0.25);
     }
-    .menu-tabs{
-        height: 40px;
-        text-align: center;
-        font-family: 'OpenSans', sans-serif;
-        font-size: 14px;
-        color: #FFFFFF;
-        line-height: 2.5;
-        width: 100%;
-    }
-    .logo-burger{
-        display: flex;
-        justify-content: space-between;
-        height: 50px;
-        list-style-type: none;
-        padding: 13px;
-        width: 100%;
-        margin: 0%;
-    }
-    .logo{
-        margin-left: 2%;
-    }
-    
-    /* ------------tentative de menu colonne pour burger------------ */
-    header{
-        background-color: #DD5555;
-    
-    }
-    ul{
-        flex-direction: column;
-    }
-    
     .menu{
         display: block;
-        border: 1px solid white;
         background-color: #DD5555;
-        
+        width: 100%;
+        text-align: center;
     }
-    
-    .menu-tabs{
+    .menu li{
         height: 40px;
         text-align: center;
         font-family: 'OpenSans', sans-serif;
         font-size: 14px;
         color: #FFFFFF;
         line-height: 2.5;
-        width: 1000px;
-
+        width: 100%;
     }
 
     /* SECTION SUPER APP */
