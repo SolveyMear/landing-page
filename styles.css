@@ -19,7 +19,6 @@ nav{
 .logo-burger{
     margin-left: 11%;
     margin-right: 12px;
-    border: 1px solid black;
 }
 
 header ul{
@@ -314,7 +313,7 @@ header ul{
 
 .contact-form input{
     border-radius: 2px;
-    border: 1px solid #FFFFFF;
+    border: none;
     padding: 7px;
 }
 
@@ -330,7 +329,10 @@ header ul{
 }
 
 .form-name input{
-    margin-right: 10px;
+    margin-right: 5px;
+}
+.form-mail input{
+    margin-left: 5px;
 }
 
 textarea{
@@ -366,10 +368,10 @@ button:hover{
 }
 
 /* ------------------MEDIA QUERIES----------------- */
-/*Rajouter les span en rose en MQ*/
 
 @media screen and (max-width: 700px) {
 
+/* MENU */
    .burger-icon{
     display: flex;
     flex-direction: column;
@@ -392,7 +394,6 @@ button:hover{
         color: #FFFFFF;
         line-height: 2.5;
     }
-
     .logo-burger{
         display: flex;
         justify-content: space-between;
@@ -405,10 +406,8 @@ button:hover{
     .logo{
         margin-left: 2%;
     }
-}
-    
-    
-@media screen and (max-width: 700px) {
+
+    /* SECTION SUPER APP */
     .buttons{
         display: inline;
     }
@@ -417,7 +416,11 @@ button:hover{
         flex-direction: column;
         align-items: center;
     }
+    span{
+        color: #DD5555;
+    }
 
+/* SECTION SUPER EQUIPE */
     .team-container{
         flex-direction: column;
         align-items: center;
@@ -427,12 +430,11 @@ button:hover{
         flex-direction: column;
         align-items: center;
     }    
-
     .team-members{
         margin: 20px;
     }
 
-    /* FORMULAIRE */
+/* FORMULAIRE */
     .form-name-mail{
         flex-direction: column;
         align-items: center;
@@ -440,14 +442,15 @@ button:hover{
     .form-name,
     .form-mail{
         width: 100%;
-
     }
     .form-name input{
         margin-bottom: 10px;
+        margin-right: 0;
     }
-    .form-container{
-        width: 100%;
+    .form-mail input{
+        margin-left: 0;
     }
+
     text-area{
         width: 50%;
         align-items: center;
@@ -457,7 +460,7 @@ button:hover{
     
 @media screen and (min-width: 701px) and (max-width: 1150px){
     
-    /* TRUCS SUPER ET SUPER EQUIPE*/
+/* TRUCS SUPER */ 
     .app-options{
         flex-direction: row;
     }
@@ -465,7 +468,11 @@ button:hover{
     .second-row{
         flex-direction: column;
     }
+    span{
+        color: #DD5555;
+    }
 
+/*SUPER EQUIPE*/
     .team-container{
         flex-direction: column;
         align-items: center;
@@ -473,6 +480,5 @@ button:hover{
     .team-members{
         margin: 20px;
     }
-    
 } 
 
