@@ -7,8 +7,8 @@
 
 /*--------------------------HEADER------------------------- */
 nav{
-    height: 52px;
     background-color: #DD5555;
+    padding: 13px 0;
 
 }
 .logo{
@@ -373,14 +373,11 @@ button:hover{
 
 /* MENU */
    .burger-icon{
-    display: flex;
-    flex-direction: column;
-    border-bottom: 4px solid white;
-    width: 30px;
-    margin: 0 20px 6px 0;
-    }
-    .menu{
-        display: none;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 4px solid white;
+        width: 30px;
+        margin: 0 20px 6px 0;
     }
     .menu-tabs:hover{
         cursor: pointer;
@@ -393,6 +390,7 @@ button:hover{
         font-size: 14px;
         color: #FFFFFF;
         line-height: 2.5;
+        width: 100%;
     }
     .logo-burger{
         display: flex;
@@ -405,6 +403,33 @@ button:hover{
     }
     .logo{
         margin-left: 2%;
+    }
+    
+    /* ------------tentative de menu colonne pour burger------------ */
+    header{
+        background-color: #DD5555;
+    
+    }
+    ul{
+        flex-direction: column;
+    }
+    
+    .menu{
+        display: block;
+        border: 1px solid white;
+        background-color: #DD5555;
+        
+    }
+    
+    .menu-tabs{
+        height: 40px;
+        text-align: center;
+        font-family: 'OpenSans', sans-serif;
+        font-size: 14px;
+        color: #FFFFFF;
+        line-height: 2.5;
+        width: 1000px;
+
     }
 
     /* SECTION SUPER APP */
