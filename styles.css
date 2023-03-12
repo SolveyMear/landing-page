@@ -8,8 +8,7 @@
 /*--------------------------HEADER------------------------- */
 nav{
     background-color: #DD5555;
-    padding: 13px 0;
-
+    
 }
 .logo{
     width: 120px;
@@ -27,6 +26,8 @@ header ul{
     display: flex;
     list-style-type: none;
     align-items: center;
+    /* height: 56px; */
+    padding: 13px 0;
     
 }
 .menu{
@@ -375,9 +376,6 @@ button:hover{
     header{
         background-color: #DD5555;
     }
-    nav{
-        padding: 5px;
-    }
     ul{
         flex-direction: column;
     }
@@ -419,6 +417,9 @@ button:hover{
         color: #FFFFFF;
         line-height: 2.5;
         width: 100%;
+    }
+    .hide{
+        display: none;
     }
 
     /* SECTION SUPER APP */
