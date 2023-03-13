@@ -5,47 +5,53 @@
     font-weight: normal;
 }
 
-/* ---------------------------HEADER------------------------- */
+/*--------------------------HEADER------------------------- */
 nav{
-    height: 52px;
     background-color: #DD5555;
+    
 }
-
 .logo{
     width: 120px;
     height: 28px;
+}
+
+.logo-burger{
     margin-left: 11%;
     margin-right: 12px;
 }
 
 header ul{
-    font-family: 'OpenSans', sans-serif;
-    font-size: 14px;
-    color: #FFFFFF;
-    height: 100%;
+    width: 100%;
     display: flex;
     list-style-type: none;
     align-items: center;
+    
 }
+.menu{
+    display: flex;
+    height: 100%;
+    align-items: center;
+} 
 
-header li{
+.menu-tabs{
+    font-family: 'OpenSans', sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
     display: flex;
     align-items: center;
     width: 89px;
     justify-content: center ;
     height: 100%;
     white-space: nowrap;
+
 }
 
-.first-tab:hover,
-.second-tab:hover,
-.third-tab:hover,
-.fourth-tab:hover{
+.menu-tabs:hover{
     color: #FFFFFF;
     background:rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-
+    cursor: pointer;   
 }
+
 
 /* -----------------section SUPER APP--------------------- */
 
@@ -108,6 +114,7 @@ header li{
     color: #2E2E2E;
     margin: 12px;
     border-radius: 5px;
+    transition: 0.3s;
     cursor: pointer;
 }
 
@@ -135,7 +142,6 @@ header li{
     display: flex;
     align-items: center;
     height: 100%;
-    max-width: 1000px;
 }
 
 .trucs-super h2{
@@ -148,18 +154,10 @@ header li{
 
 .app-options{
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     height: 40%;
     padding: 1px;
-}
-
-.first-row,
-.second-row{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-
 }
 
 .app-option-items{
@@ -179,7 +177,9 @@ header li{
     justify-content: center;
     align-items: center;
 }
-
+.bed-item{
+    order: 1;
+}
 .item-title{
     font-family: 'OpenSans-Semibold', sans-serif;    
     font-size: 28px;
@@ -305,13 +305,13 @@ header li{
 
 .contact-form input{
     border-radius: 2px;
-    border: 1px solid #FFFFFF;
+    border: none;
     padding: 7px;
 }
 
 .contact-form label {
     margin-bottom: 10px;
-  }
+}
 
 .form-name,
 .form-mail{
@@ -321,7 +321,10 @@ header li{
 }
 
 .form-name input{
-    margin-right: 10px;
+    margin-right: 5px;
+}
+.form-mail input{
+    margin-left: 5px;
 }
 
 textarea{
@@ -358,28 +361,63 @@ button:hover{
 
 /* ------------------MEDIA QUERIES----------------- */
 
-
-@media screen and (max-width: 600px) {
-    .logo{
-        margin-left: 5%;
-    }
-    ul{
-        display: flex;
-        justify-content: space-around;
-    }
-}
-    
-    
 @media screen and (max-width: 700px) {
+
+/* MENU */
+    header{
+        background-color: #DD5555;
+    }
+    header ul{
+        flex-direction: column;
+    }
+    .logo-burger{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        list-style-type: none;
+        padding: 13px;
+        width: 100%;
+        margin: 0;
+    }
+   .burger-icon{
+        display: flex;
+        flex-direction: column;
+        border-bottom: 4px solid white;
+        width: 30px;
+        margin: 0 20px 6px 0;
+    }
+    .logo{
+        margin-left: 2%;
+    }
+    .menu{
+        display: block;
+        background-color: #DD5555;
+        width: 100%;
+        text-align: center;
+    }
+    .menu li{
+        height: 40px;
+        text-align: center;
+        font-family: 'OpenSans', sans-serif;
+        font-size: 14px;
+        color: #FFFFFF;
+        line-height: 2.5;
+        width: 100%;
+    }
+    .hide{
+        display: none;
+    }
+
+/* SECTION SUPER APP */
+    .bed-option{
+        color: #DD5555;
+    }
     .buttons{
         display: inline;
     }
-    .first-row,
-    .second-row{
-        flex-direction: column;
-        align-items: center;
-    }
 
+/* SECTION SUPER EQUIPE */
     .team-container{
         flex-direction: column;
         align-items: center;
@@ -389,45 +427,49 @@ button:hover{
         flex-direction: column;
         align-items: center;
     }    
-
     .team-members{
         margin: 20px;
     }
 
-        /* FORMULAIRE */
-        .form-name-mail{
-            flex-direction: column;
-            align-items: center;
-        }
-        .form-name,
-        .form-mail{
-            width: 100%;
+/* FORMULAIRE */
+    .form-name-mail{
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-name,
+    .form-mail{
+        width: 100%;
+    }
+    .form-name input{
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .form-mail input{
+        margin-left: 0;
+    }
 
-        }
-        .form-name input{
-            margin-bottom: 10px;
-        }
-        .form-container{
-            width: 100%;
-        }
-        text-area{
-            width: 50%;
-            align-items: center;
-        }
+    text-area{
+        width: 50%;
+        align-items: center;
+    }
 }
       
     
 @media screen and (min-width: 701px) and (max-width: 1150px){
     
-    /* TRUCS SUPER ET SUPER EQUIPE*/
+/* TRUCS SUPER */ 
     .app-options{
-        flex-direction: row;
+    justify-content: space-evenly;    
     }
-    .first-row,
+    /* .first-row,
     .second-row{
-        flex-direction: column;
+        flex-direction: column; */
+    
+    .bed-option{
+        color: #DD5555;
     }
 
+/*SUPER EQUIPE*/
     .team-container{
         flex-direction: column;
         align-items: center;
@@ -435,6 +477,12 @@ button:hover{
     .team-members{
         margin: 20px;
     }
-    
 } 
 
+@media screen and (min-width: 701px){
+    header ul{
+        height: 52px;
+    }
+
+}
+    
