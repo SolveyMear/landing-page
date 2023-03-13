@@ -21,13 +21,10 @@ nav{
 }
 
 header ul{
-    height: 100%;
     width: 100%;
     display: flex;
     list-style-type: none;
     align-items: center;
-    /* height: 56px; */
-    padding: 13px 0;
     
 }
 .menu{
@@ -117,6 +114,7 @@ header ul{
     color: #2E2E2E;
     margin: 12px;
     border-radius: 5px;
+    transition: 0.3s;
     cursor: pointer;
 }
 
@@ -144,7 +142,6 @@ header ul{
     display: flex;
     align-items: center;
     height: 100%;
-    max-width: 1000px;
 }
 
 .trucs-super h2{
@@ -157,18 +154,10 @@ header ul{
 
 .app-options{
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     height: 40%;
     padding: 1px;
-}
-
-.first-row,
-.second-row{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-
 }
 
 .app-option-items{
@@ -188,7 +177,9 @@ header ul{
     justify-content: center;
     align-items: center;
 }
-
+.bed-item{
+    order: 1;
+}
 .item-title{
     font-family: 'OpenSans-Semibold', sans-serif;    
     font-size: 28px;
@@ -320,7 +311,7 @@ header ul{
 
 .contact-form label {
     margin-bottom: 10px;
-  }
+}
 
 .form-name,
 .form-mail{
@@ -376,7 +367,7 @@ button:hover{
     header{
         background-color: #DD5555;
     }
-    ul{
+    header ul{
         flex-direction: column;
     }
     .logo-burger{
@@ -399,10 +390,6 @@ button:hover{
     .logo{
         margin-left: 2%;
     }
-    .menu-tabs:hover{
-        cursor: pointer;
-        background:rgba(0, 0, 0, 0.25);
-    }
     .menu{
         display: block;
         background-color: #DD5555;
@@ -422,17 +409,12 @@ button:hover{
         display: none;
     }
 
-    /* SECTION SUPER APP */
+/* SECTION SUPER APP */
+    .bed-option{
+        color: #DD5555;
+    }
     .buttons{
         display: inline;
-    }
-    .first-row,
-    .second-row{
-        flex-direction: column;
-        align-items: center;
-    }
-    span{
-        color: #DD5555;
     }
 
 /* SECTION SUPER EQUIPE */
@@ -477,13 +459,13 @@ button:hover{
     
 /* TRUCS SUPER */ 
     .app-options{
-        flex-direction: row;
+    justify-content: space-evenly;    
     }
-    .first-row,
+    /* .first-row,
     .second-row{
-        flex-direction: column;
-    }
-    span{
+        flex-direction: column; */
+    
+    .bed-option{
         color: #DD5555;
     }
 
@@ -497,3 +479,10 @@ button:hover{
     }
 } 
 
+@media screen and (min-width: 701px){
+    header ul{
+        height: 52px;
+    }
+
+}
+    
